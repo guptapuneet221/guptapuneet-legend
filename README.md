@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @guptapuneet-legend
+- 👋 Hi, I’m @puneet-gupta
 - 👀 I’m interested in learning programming language my favourite programming language is C++ and i also have a basic knowledge of java and C.Other than that  i like watching anime,movies oalyig games.
 - 🌱 I’m currently learning c++ and data structure and my future plan is to learn Web Dev or Python. 
 - 💞️ I’m looking to collaborate on
