@@ -1,0 +1,38 @@
+//Spiral print of 2D array in anticlockwise direction
+#include <iostream>
+using namespace std;
+int main() {
+    int n,m;
+    cin>>n>>m;
+    int arr[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            cin>>arr[i][j];
+        }
+    }
+    int minr=0;
+    int minc=0;
+    int maxr=n-1;
+    int maxc=m-1;
+    int tne=n*m;
+    int cnt=0;
+    while(cnt<tne){
+        for(int i=minr;i<=maxr&&cnt<tne;i++){
+            cout<<arr[i][minc]<<" ";
+            cnt++;
+        }minc++;
+        for(int i=minc;i<=maxc&&cnt<tne;i++){
+            cout<<arr[maxr][i]<<" ";
+            cnt++;
+        }maxr--;
+        for(int i=maxr;i>=minr&&cnt<tne;i--){
+            cout<<arr[i][maxc]<<"  ";
+            cnt++;
+        }maxc--;
+        for(int i=maxc;i>=minc&&cnt<tne;i--){
+            cout<<arr[minr][i]<<" ";
+            cnt++;
+        }minr++;
+    }
+
+}
